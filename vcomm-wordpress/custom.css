@@ -1,0 +1,87 @@
+/* ..................................... 
+
+defaults
+
+..................................... */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,700,900');
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr{ border-bottom: 1px dotted #ccc !important; }
+
+.swal-button{ background-color: var(--color5) !important; border: 0 !important; }
+.align{
+    padding: 40px;
+}
+
+/* ..................................... 
+
+default colors
+
+..................................... */
+
+:root {
+    --color1: #f6921e;
+    --color2: #ffd2a6;
+    --color3: #ffffff;
+    --color4: #20323f;
+    --color5: #496577;
+    --color6: #091319;
+}
+
+/* ..................................... 
+
+design
+
+..................................... */
+::selection {      background: var(--color1); }
+::-moz-selection { background: var(--color1); }
+
+a{
+    color: var(--color3);
+    font-weight: bold;
+    transition: color .5s ease-out;
+    -moz-transition: color .5s ease-out;
+    -webkit-transition: color .5s ease-out;
+    -o-transition: color .5s ease-out;
+}
+a:hover{ color: var(--color1); }
+
+.color1{ color: var(--color1) !important; }
+.color2{ color: var(--color2) !important; }
+.color3{ color: var(--color3) !important; }
+.color4{ color: var(--color4) !important; }
+.color5{ color: var(--color5) !important; }
+.color6{ color: var(--color6) !important; }
+.white{ color: aliceblue !important; }
+.black{ color: black !important; }
+
+.bg1{ background-color: var(--color1) !important; }
+.bg2{ background-color: var(--color2) !important; }
+.bg3{ background-color: var(--color3) !important; }
+.bg4{ background-color: var(--color4) !important; }
+.bg5{ background-color: var(--color5) !important; }
+.bg6{ background-color: var(--color6) !important; }
+.light{ background-color: #f2f2f2 !important; }
+
+.white{ color: aliceblue !important; }
+.black{ color: black !important; }
+
+.is-color{
+    background-color: var(--color1); !important;
+    color: var(--color4);
+    border: 0 !important;
+    font-family: 'Montserrat', sans-serif;
+}
+.is-color:hover{
+    color: var(--color1) !important;
+    background-color: #e2e2e2 !important;
+}
+.is-color:focus{
+    color: var(--color1) !important;
+    background-color: #f2f2f2 !important;
+}
+.is-color h1{
+    color: white !important;
+}

@@ -1,0 +1,200 @@
+/* ..................................... 
+
+defaults
+
+..................................... */
+.animated {
+    -webkit-animation-duration: 0.5s !important;
+    animation-duration: 0.3s !important;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.clearnav{ height: 50px; }
+h1{ font-size: 55px !important; }
+h2{ font-size: 40px !important; }
+h3{ font-size: 25px !important; }
+.top{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    padding: 30px;
+    display: none;
+}
+.fix{
+    padding: 0;
+}
+
+/* ..................................... 
+
+bulma
+
+..................................... */
+
+@media screen and (orientation: portrait) { 
+    .noscroll{ 
+        padding: 1rem 1.5rem;
+    }
+}
+
+/* ..................................... 
+
+wordpress
+
+..................................... */
+h1{ font-size: 55px !important; font-weight: 200 !important;}
+h2{ font-size: 34px !important; }
+h3, h4{ font-size: 25px !important; }
+
+h1, h2, h3, h4, h5{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+p{
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+p img{
+    padding-bottom: 0;
+}
+small{
+    padding-left: 20px;
+}
+.excerpt p{
+    padding: 0 !important;
+}
+.wp-block-columns {
+    display: flex;
+}
+
+.wp-block-column {
+    flex: 1;
+}
+.wp-block-image{
+    margin-bottom: 0 !important;
+}
+
+.wp-block-button{
+    padding: 40px;
+    text-align: center;
+}
+.wp-block-button__link{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px dotted salmon;
+}
+.wp-block-quote{
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    background-color: #f2f2f2 !important;
+    color: black !important;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: 1px dotted salmon !important;
+}
+
+/* ..................................... 
+
+nav
+
+..................................... */
+.brand{
+    position: fixed;
+    padding: 60px;
+    z-index: 99;
+}
+.nav{
+    width: auto;
+    height: 50px;
+    background-color: transparent;
+    position: fixed;
+    z-index: 98;
+    right: 0;
+    border-bottom-left-radius: 10px;
+}
+.nav-itens{
+    padding: 15px;
+}
+.nav-itens li{
+    display: inline !important;
+    padding: 10px;
+}
+.backnav{
+    width: 100%;
+    text-align: right;
+    position: fixed;
+    padding: 10px;
+    z-index: 98;
+}
+.toggle{ 
+    display: none; 
+    padding: 10px; 
+    right: 0; 
+    position: fixed; 
+    z-index: 99 !important; 
+}
+.toggle-data{
+    width: 350px;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    z-index: 100;
+    padding: 50px;
+    right: -1000;
+}
+.toggle-itens a{
+    color: white !important;
+    font-size: 18px !important;
+    padding: 10px;
+}
+
+
+/* ..................................... 
+
+blog
+
+..................................... */
+.thumbs li{
+    display: inline-grid !important;
+    padding: 10px;
+    width: 340px;
+}
+.thumb{
+    width: 340px;
+    height: 200px;
+    background-size: cover;
+}
+
+/* ..................................... 
+
+mobile
+
+..................................... */
+
+@media screen and (orientation: portrait) {
+    h1{ font-size: 45px !important; }
+    h2{ font-size: 35px !important; }
+    h3{ font-size: 25px !important; }
+
+    .nav{ display: none; }
+    .toggle{ display: block; }
+
+    .thumbs li{ width: 240px; }
+    .thumb{
+        width: 240px;
+        height: 100px;
+        background-size: cover;
+    }
+    .toggle-itens a{
+        color: white !important;
+        font-size: 28px !important;
+        padding: 2px;
+    }
+    .brand{
+        padding: 20px;
+    }
+}
