@@ -1,18 +1,24 @@
+/*
+Theme Name: Site by VCOMM
+Theme URI: https://vcomm.com.br/framework
+Author: Yazui
+Author URI: https://yazui.co
+Description: Modern and Clean Theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentyseventeen
+Tags: minimalist, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
 /* ..................................... 
 
 defaults
 
 ..................................... */
-.animated {
-    -webkit-animation-duration: 0.5s !important;
-    animation-duration: 0.3s !important;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
 .clearnav{ height: 50px; }
-h1{ font-size: 55px !important; }
-h2{ font-size: 40px !important; }
-h3{ font-size: 25px !important; }
 .top{
     position: fixed;
     bottom: 0;
@@ -42,28 +48,6 @@ bulma
 wordpress
 
 ..................................... */
-h1{ font-size: 55px !important; font-weight: 200 !important;}
-h2{ font-size: 34px !important; }
-h3, h4{ font-size: 25px !important; }
-
-h1, h2, h3, h4, h5{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding-left: 20px;
-}
-p{
-    padding-left: 20px;
-    padding-bottom: 10px;
-}
-p img{
-    padding-bottom: 0;
-}
-small{
-    padding-left: 20px;
-}
-.excerpt p{
-    padding: 0 !important;
-}
 .wp-block-columns {
     display: flex;
 }
@@ -176,10 +160,6 @@ mobile
 ..................................... */
 
 @media screen and (orientation: portrait) {
-    h1{ font-size: 45px !important; }
-    h2{ font-size: 35px !important; }
-    h3{ font-size: 25px !important; }
-
     .nav{ display: none; }
     .toggle{ display: block; }
 

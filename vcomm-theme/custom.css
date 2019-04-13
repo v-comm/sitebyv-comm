@@ -7,7 +7,10 @@ defaults
 body{
     font-family: 'Montserrat', sans-serif;
 }
-
+.animated {
+    -webkit-animation-duration: 0.5s !important;
+    animation-duration: 0.3s !important;
+}
 hr{ border-bottom: 1px dotted #ccc !important; }
 
 .swal-button{ background-color: var(--color5) !important; border: 0 !important; }
