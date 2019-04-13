@@ -43,7 +43,7 @@
     <!-- brand -->
     <!-- ..................................... -->
     <div class="brand">
-        <img src="<?php echo get_bloginfo('template_url') ?>/brand.png"/>
+        <img src="<?php echo get_bloginfo('template_url') ?>/image/brand.png"/>
     </div>
 
     <!-- ..................................... -->
