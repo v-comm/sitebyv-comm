@@ -18,7 +18,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 defaults
 
 ..................................... */
-.clearnav{ height: 50px; }
+.inline li{
+    list-style: none !important;
+}
 .top{
     position: fixed;
     bottom: 0;
@@ -30,6 +32,34 @@ defaults
 .fix{
     padding: 0;
 }
+.fakeload{
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.edit{
+    padding: 40px;
+    width: 100%;
+    height: auto;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.postdata{ font-size: 10px !important; }
+
+/* ..................................... 
+
+shortcuts
+
+..................................... */
+.clearnav{ height: 60px; }
+.clearsearch{ height: 5px; }
+
+.clear10{ height: 10px; }
+.clear25{ height: 25px; }
+.clear50{ height: 50px; }
+.clear100{ height: 100px; }
 
 /* ..................................... 
 
@@ -48,6 +78,31 @@ bulma
 wordpress
 
 ..................................... */
+
+#wordpress p{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#wordpress h2{
+    font-size: 40px !important;
+    padding-left: 20px;
+}
+
+#wordpress h3{
+    font-size: 30px !important;
+    padding-left: 20px;
+}
+
+#wordpress h4{
+    font-size: 20px !important;
+    padding-left: 20px;
+}
+#wordpress iframe{
+    width: 100%;
+    height: 501px;
+}
+
 .wp-block-columns {
     display: flex;
 }
@@ -60,25 +115,23 @@ wordpress
 }
 
 .wp-block-button{
-    padding: 40px;
-    text-align: center;
+    padding: 20px;
 }
 .wp-block-button__link{
-    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    border: 1px dotted salmon;
 }
 .wp-block-quote{
     width: 100%;
     height: auto;
     padding: 40px;
-    background-color: #f2f2f2 !important;
-    color: black !important;
     text-transform: uppercase;
     margin-bottom: 20px;
     margin-top: 20px;
-    border-bottom: 1px dotted salmon !important;
+}
+
+@media screen and (orientation: portrait) {
+
 }
 
 /* ..................................... 
@@ -88,7 +141,7 @@ nav
 ..................................... */
 .brand{
     position: fixed;
-    padding: 60px;
+    padding: 20px;
     z-index: 99;
 }
 .nav{
@@ -111,7 +164,7 @@ nav
     width: 100%;
     text-align: right;
     position: fixed;
-    padding: 10px;
+    padding: 20px;
     z-index: 98;
 }
 .toggle{ 
@@ -130,11 +183,7 @@ nav
     padding: 50px;
     right: -1000;
 }
-.toggle-itens a{
-    color: white !important;
-    font-size: 18px !important;
-    padding: 10px;
-}
+
 
 
 /* ..................................... 
@@ -176,5 +225,6 @@ mobile
     }
     .brand{
         padding: 20px;
+        width: 30%;
     }
 }

@@ -3,20 +3,22 @@
 defaults
 
 ..................................... */
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,700,900');
 body{
     font-family: 'Montserrat', sans-serif;
 }
 .animated {
-    -webkit-animation-duration: 0.5s !important;
-    animation-duration: 0.3s !important;
+    -webkit-animation-duration: 0.6s !important;
+    animation-duration: 0.6s !important;
 }
 hr{ border-bottom: 1px dotted #ccc !important; }
 
 .swal-button{ background-color: var(--color5) !important; border: 0 !important; }
-.align{
-    padding: 40px;
-}
+
+.fakeload{ background-color: #1b1d1f !important; }
+#gif{ width: 20%; margin-top: 200px;}
+
 
 /* ..................................... 
 
@@ -25,12 +27,12 @@ default colors
 ..................................... */
 
 :root {
-    --color1: #f6921e;
-    --color2: #ffd2a6;
-    --color3: #ffffff;
-    --color4: #20323f;
-    --color5: #496577;
-    --color6: #091319;
+    --color1: #fa8072;
+    --color2: #BB7365;
+    --color3: #DEADA1;
+    --color4: #ffffff;
+    --color5: #3C4663;
+    --color6: #6D748C;
 }
 
 /* ..................................... 
@@ -38,6 +40,7 @@ default colors
 design
 
 ..................................... */
+
 ::selection {      background: var(--color1); }
 ::-moz-selection { background: var(--color1); }
 
@@ -87,4 +90,31 @@ a:hover{ color: var(--color1); }
 }
 .is-color h1{
     color: white !important;
+}
+
+.nav{ background-color: transparent;}
+.nav a{ font-size: 14px; font-weight: 500;}
+.toggle-data{ background-color: var(--color5); }
+.toggle-itens a{ color: var(--color1) !important; }
+
+
+/* ..................................... 
+
+re-design wordpress
+
+..................................... */
+.edit{ background-color: #666; }
+
+.wp-block-button__link{
+    color: white;
+    background-color: var(--color1);
+    border: 1px dotted salmon;
+}
+.wp-block-button__link:hover{
+    color: var(--color3);
+}
+.wp-block-quote{
+    background-color: #f2f2f2 !important;
+    color: black !important;
+    border-bottom: 1px dotted salmon !important;
 }

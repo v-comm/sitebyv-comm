@@ -94,6 +94,9 @@ function my_remove_sub_menus() {
     remove_submenu_page('edit.php', 'edit-tags.php?taxonomy=post_tag');
 }
 
+// Disable WordPress Admin Bar for all users but admins. /
+show_admin_bar(false);
+
 // Add Fancybox
 add_filter( 'wp_get_attachment_link', 'ccd_fancybox_gallery_attribute', 10, 4 );
 function ccd_fancybox_gallery_attribute( $content, $id ) {
