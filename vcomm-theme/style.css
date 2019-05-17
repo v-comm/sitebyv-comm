@@ -39,14 +39,8 @@ defaults
     height: 100vh;
     text-align: center;
 }
-.edit{
-    padding: 40px;
-    width: 100%;
-    height: auto;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-}
 .postdata{ font-size: 10px !important; }
+.fine{ font-weight: 200 !important; }
 
 /* ..................................... 
 
@@ -184,8 +178,6 @@ nav
     right: -1000;
 }
 
-
-
 /* ..................................... 
 
 blog
@@ -200,6 +192,35 @@ blog
     width: 340px;
     height: 200px;
     background-size: cover;
+}
+
+/* ..................................... 
+
+woocommerce
+
+..................................... */
+.cart-box{ margin-top: 20px; }
+.single_add_to_cart_button{
+    top: -71px;
+    left: 120px;
+    font-size: 26px;
+    padding-bottom: 50px;
+}
+.product_title{
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 60px;
+}
+.in-stock{
+    font-size: 12px;
+}
+.price del{
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.slick-next{
+    right: 30px;
 }
 
 /* ..................................... 

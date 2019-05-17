@@ -115,5 +115,26 @@ function ccd_fancybox_image_attribute( $content ) {
 /* feature image */
 add_theme_support( 'post-thumbnails' );
 
+// Add WooCommerce
+add_action( 'after_setup_theme', 'customtheme_add_woocommerce_support' );
+function customtheme_add_woocommerce_support()
+{
+    add_theme_support( 'woocommerce' );
+}
+
+// Custom WooCommerce
+add_filter( 'woocommerce_product_description_heading', 'remove_product_description_heading' );
+function remove_product_description_heading() {
+    return '';
+}
+
+add_action( 'woocommerce_cart_totals_after_shipping', 'my_wc_custom_cart_shipping_notice' );
+add_action( 'woocommerce_review_order_after_shipping', 'my_wc_custom_cart_shipping_notice' );
+function my_wc_custom_cart_shipping_notice() {
+    echo '<tr class="shipping-notice"><td colspan="2"><small>';
+    _e( '<strong>Atenção:</strong> O prazo de entrega é de 5 a 10 dias uteis e começa a contar a partir da aprovação do pagamento.', 'my-text-domain' );
+    echo '</small></td></tr>';
+}
+
 
 ?>

@@ -31,8 +31,8 @@
 
                 <!-- edit -->
                 <p>&nbsp;</p>
-                <div class="edit">
-                    <?php edit_post_link('Deseja editar este conteúdo? Toque aqui para editar.'); ?>
+                <div class="color1">
+                    <?php edit_post_link('Editar conteúdo?'); ?>
                 </div>
 
                 <!-- query-close -->

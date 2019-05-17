@@ -5,7 +5,7 @@
 <?php
 
 $section01 = "Home";
-$section02 = "Conteúdo 01";
+$section02 = "Design";
 $section03 = "Conteúdo 02";
 $section04 = "Conteúdo 03";
 $section05 = "Catálogo";
@@ -13,7 +13,7 @@ $section06 = "Blog";
 $section07 = "Contato";
 
 $hash01 = "top";
-$hash02 = "pagina01";
+$hash02 = "design";
 $hash03 = "pagina02";
 $hash04 = "pagina03";
 $hash05 = "catalogo";
